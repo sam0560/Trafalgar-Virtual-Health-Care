@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafallgar</title>
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="flex flex-col mt-4 mx-auto max-w-[90rem] text-[#7D7987] font-normal overflow-x-hidden px-10 max-sm:px-4 relative">
+    <header>
+        <!-- navigation bar -->
+        <nav class="max-md:bg-white h-20 z-50 inset-0 max-md:fixed">
+            <div class="flex items-center justify-between max-w-[60rem] mx-auto px-4">
+                <img src="/Asset/logo.png" alt="logo" class="max-md:mt-4">
+                <div class="
+                    nav-links
+                    max-md:absolute 
+                    max-md:top-20
+                    max-md:min-h-[60dvh]
+                    max-md:-left-full
+                    max-md:w-full
+                    max-md:py-20
+                    z-50
+                    max-md:bg-[#458FF6] 
+                    max-md:text-white
+                    transition-all
+                    duration-500
+                    ">
+                    <ul class="
+                    flex 
+                    flex-row 
+                    gap-6 
+                    text-base 
+                    max-md:flex-col 
+                    max-md:justify-center 
+                    max-md:items-center 
+                    ">
+                        <li><a href="#" class="focus:text-[#1F1534] focus:font-semibold capitalize">home</a></li>
+                        <li><a href="#" class="focus:text-[#1F1534] focus:font-semibold capitalize">find a doctor</a></li>
+                        <li><a href="#" class="focus:text-[#1F1534] focus:font-semibold capitalize">apps</a></li>
+                        <li><a href="#testimonials" class="focus:text-[#1F1534] focus:font-semibold capitalize">testimonial</a></li>
+                        <li><a href="#" class="focus:text-[#1F1534] focus:font-semibold capitalize">about us</a></li>
+                    </ul>
+                </div>
+                <ion-icon name="menu-outline" class="text-3xl md:hidden cursor-pointer max-md:mt-4" onclick="onToggleMenu(this)"></ion-icon>
+            </div>
+        </nav>
+        </header>
+
+
+        <!-- Hero section  -->
+        <div class="flex flex-row max-sm:flex-col flex-wrap justify-center gap-10 items-center relative mt-16 max-w-[60rem] mx-auto">
+            <img src="/Asset/element.png" alt="Circle elements" class="absolute -left-44 top-0">
+            <div class="max-w-[25rem] w-full flex-1">
+                <h1 class="text-[3rem] leading-[1] text-[#1F1534] font-semibold pb-8 max-md:text-center">Virtual healthcare for you</h1>
+                <p class="w-full max-md:text-center">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+                <button class="
+                    mt-8 
+                    w-[12rem] 
+                    h-[3rem] 
+                    bg-[#458FF6] 
+                    text-neutral-50 
+                    rounded-full
+                    max-md:flex 
+                    max-md:flex-row
+                    max-md:justify-center
+                    max-md:items-center
+                    max-md:m-auto
+                    max-md:mt-8 
+                ">
+                Consult today
+                </button>
+            </div>
+            <div class="flex-1">
+                <img src="/Asset/Illustrations/header-illustration1.png" alt="" class="max-w-[33rem] w-full max-h-[27rem]">
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="mt-40 mx-auto relative">
+            <div class="text-center max-w-[52rem] flex flex-col justify-center items-center mx-auto">
+                <h2 class="text-[#1F1534] text-[2.25rem] font-semibold">Our services</h2>
+                <div class="w-12 h-[.175rem] bg-[#0a080f] my-4"></div>
+                <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment
+                with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+            </div>
+
+            <!-- Cards  -->
+            <div class="pt-16 flex flex-row flex-wrap justify-center items-center gap-8">
+                <img src="/Asset/Vector2.svg" alt="vector image" class="absolute -left-24 top-96 max-sm:hidden">
+                <img src="/Asset/element1.png" alt="element 2 image" class="absolute right-10 bottom-106">
+                <div class="max-w-[20rem] min-h-[22rem] bg-white shadow-3xl rounded-3xl px-8 py-10 z-10">
+                    <img src="/Asset/search-doctor.svg" alt="search for doctor icon">
+                    <h3 class="py-4 text-[1.5rem] font-semibold text-[#1F1534]">Search doctor</h3>
+                    <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                </div>
+                <div class="max-w-[20rem] min-h-[22rem] bg-white shadow-3xl rounded-3xl px-8 py-10 z-10">
+                    <img src="/Asset/online-pharmacy.svg" alt="online pharmacy icon">
+                    <h3 class="py-4 text-[1.5rem] font-semibold text-[#1F1534]">Online pharmacy</h3>
+                    <p>Buy your medicines with our mobile application with a simple delivery system</p>
+                </div>
+                <div class="max-w-[20rem] min-h-[22rem] bg-white shadow-3xl rounded-3xl px-8 py-10 z-10">
+                    <img src="/Asset/consultation.svg" alt="search for doctor icon">
+                    <h3 class="py-4 text-[1.5rem] font-semibold text-[#1F1534]">Consultation</h3>
+                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
+                </div>
+                <div class="max-w-[20rem] min-h-[22rem] bg-white shadow-3xl rounded-3xl px-8 py-10 z-10">
+                    <img src="/Asset/detail-info.svg" alt="search for doctor icon">
+                    <h3 class="py-4 text-[1.5rem] font-semibold text-[#1F1534]">Details info</h3>
+                    <p>Free consultation with our trusted doctors and get the best recomendations</p>
+                </div>
+                <div class="max-w-[20rem] min-h-[22rem] bg-white shadow-3xl rounded-3xl px-8 py-10 z-10">
+                    <img src="/Asset/emergency-care.svg" alt="search for doctor icon">
+                    <h3 class="py-4 text-[1.5rem] font-semibold text-[#1F1534]">Emergency care</h3>
+                    <p>You can get 24/7 urgent care for yourself or your children and your lovely family</p>
+                </div>
+                <div class="max-w-[20rem] min-h-[22rem] bg-white shadow-3xl rounded-3xl px-8 py-10 z-10">
+                    <img src="/Asset/tracking.svg" alt="search for doctor icon">
+                    <h3 class="py-4 text-[1.5rem] font-semibold text-[#1F1534]">Tracking</h3>
+                    <p>Track and save your medical history and health data </p>
+                </div>
+            </div>
+                <button class="
+                my-16 
+                w-[12rem] 
+                h-[3rem] border-2 
+                border-[#458FF6] 
+                text-[#458FF6] 
+                rounded-full 
+                flex 
+                flex-row
+                justify-center
+                items-center
+                mx-auto
+                ">
+                    Learn more
+                </button>
+            </div>
+        <!-- Service end -->
+
+
+        <!-- Leading health care -->
+            <div class="mt-40 flex flex-row max-sm:flex-col flex-wrap justify-center items-center relative max-w-[60rem] w-full mx-auto gap-10">
+                <img src="/Asset/element.png" alt="vector image" class="absolute -bottom-10 -right-36 max-md:hidden">
+                <div class="flex-1">
+                    <img src="/Asset/Illustrations/illustration-sec021.png" alt="" class="max-w-[30rem] w-full max-h-[19rem]">
+                </div>
+                <div class="max-w-[21rem] flex-1">
+                    <h2 class="text-[#1F1534] text-[2.25rem] font-semibold max-sm:text-center">Leading healthcare providers</h2>
+                    <div class="w-12 h-[.175rem] bg-[#1F1534] my-4 max-sm:mx-auto"></div>
+                    <p class="w-full">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, 
+                        it’s not just work. We take pride 
+                        in the solutions we deliver</p>
+                        <button class="
+                        my-8 
+                        w-[12rem] 
+                        h-[3rem] border-2 
+                        border-[#458FF6] 
+                        text-[#458FF6] 
+                        rounded-full
+                        max-md:flex 
+                        max-md:flex-row
+                        max-md:justify-center
+                        max-md:items-center
+                        max-md:m-auto
+                        max-md:mt-8
+                        ">
+                            Learn more
+                        </button>
+                </div>
+            </div>
+
+            <div class="mt-20 flex flex-row flex-wrap justify-center items-center max-w-[60rem] mx-auto w-full gap-10 max-sm:flex-col-reverse">
+                <div class="max-w-[21rem] flex-1">
+                    <h2 class="text-[#1F1534] text-[2.25rem] font-semibold max-sm:text-center">Download our 
+                        mobile apps</h2>
+                    <div class="w-12 h-[.175rem] bg-[#1F1534] my-4 max-sm:mx-auto"></div>
+                    <p class="w-full">Our dedicated patient engagement app and web portal allow you to access information instantaneously 
+                        (no tedeous form, long calls, or administrative hassle) and securely</p>
+                    <button class="
+                        my-8 
+                        w-[12rem] 
+                        h-[3rem] border-2 
+                        border-[#458FF6] 
+                        text-[#458FF6] 
+                        rounded-full
+                        inline-flex
+                        justify-center
+                        items-center
+                        gap-2
+                        max-md:flex 
+                        max-md:flex-row
+                        max-md:m-auto
+                        max-md:mt-8
+                        ">
+                        Download <span><img src="/Asset/download-vector.svg" alt="Download vector"></span>
+                    </button>
+                </div>
+                <div class="flex-1">
+                    <img src="/Asset/Illustrations/illustration-sec031.png" alt="" class="max-w-[31rem] w-full max-h-[17rem]">
+                </div>
+            </div>
+        <!-- Leading health care End -->
+
+        <!-- Testimonial -->
+        <div class="mt-40" id="testimonials">
+            <div class="bg-gradient-to-r from-[#67C3F3] from-0% to-[#5A98F2] to-100% max-w-[60rem] min-h-[20rem] rounded-3xl mx-auto text-white p-8 max-sm:px-6 relative">
+                <img src="/Asset/element.png" alt="vector image" class="absolute right-3 top-3">
+                <img src="/Asset/element.png" alt="vector image" class="absolute bottom-0 -left-16 z-0">
+                <h1 class="text-[3rem] leading-[1] font-semibold text-center">What our customer are saying</h1>
+                <div class="w-12 h-[.175rem] bg-white my-8 mx-auto"></div>
+                <div class="flex flex-row flex-wrap justify-center items-center gap-x-40 gap-y-16">
+                    <div class="flex flex-row justify-center items-center gap-8">
+                        <img src="/Asset/image1.png" alt="Edward Newgate the founder image" class="rounded-full">
+                        <div>
+                            <h2 class="text-lg font-semibold">Edward Newgate</h2>
+                            <p>Founder circle</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-[25rem] w-full">
+                        <q>
+                            Our dedicated patient engagement app and web portal allow you to access information instantaneously 
+                            (no tedeous form, long calls, or administrative hassle) and securely
+                        </q>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel button -->
+            <div class="flex justify-center items-center gap-16 mt-8">
+                <img src="/Asset/left-arrow-inactive.svg" alt="left arrow">
+                <div>
+                    <button class="w-2 h-2  focus:bg-[#5A98F2] bg-[#5A98F2] rounded"></button>
+                    <button class="w-2 h-2 bg-[#CFDFF5] focus:bg-[#5A98F2] rounded"></button>
+                    <button class="w-2 h-2 bg-[#CFDFF5] focus:bg-[#5A98F2] rounded"></button>
+                    <button class="w-2 h-2 bg-[#CFDFF5] focus:bg-[#5A98F2] rounded"></button>
+                </div>
+                <img src="/Asset/right-arrow-active.svg" alt="arrow right">
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+        <!-- Article -->
+        <div class="mt-36">
+            <div class="text-center max-w-[52rem] flex flex-col justify-center items-center mx-auto">
+                <h2 class="text-[#1F1534] text-[2.25rem] font-semibold">Check out our latest article</h2>
+                <div class="w-12 h-[.175rem] bg-[#1F1534] my-4"></div>
+            </div>
+            <div class="flex flex-row justify-center items-center flex-wrap gap-8 pt-16 relative">
+                <img src="/Asset/element1.png" alt="circle pattern" class="absolute top-6 left-10">
+                <img src="/Asset/Vector.svg" alt="vector image" class="absolute top-0 -right-12 max-sm:hidden">
+                <div class="max-w-[20rem] h-[30rem] shadow-3xl rounded-2xl  z-10 bg-slate-50 overflow-hidden">
+                    <img src="/Asset/image2.png" alt="doctor giving patient injection">
+                    <h3 class="py-4 text-[1.4rem] font-semibold text-[#1F1534] px-6">Disease detection, check up in the laboratory</h3>
+                    <p class="px-6">In this case, the role of the health laboratory is very important to do a disease detection...</p>
+                    <div class="inline-flex px-6 items-center gap-2 py-2 text-[#4089ED]">
+                        <a href="#">Read more</a>
+                        <img src="/Asset/right-arrow-active.svg" alt="right arrow" class="w-4">
+                    </div>
+                </div>
+
+
+                <div class="max-w-[20rem] h-[30rem] shadow-3xl rounded-2xl  z-10 bg-slate-50 overflow-hidden">
+                    <img src="/Asset/image3.png" alt="doctor giving patient injection">
+                    <h3 class="py-4 text-[1.4rem] font-semibold text-[#1F1534] px-6">Herbal medicines that are safe for consumption</h3>
+                    <p class="px-6">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                    <div class="inline-flex px-6 items-center gap-2 py-2 text-[#4089ED]">
+                        <a href="#">Read more</a>
+                        <img src="/Asset/right-arrow-active.svg" alt="right arrow" class="w-4">
+                    </div>
+                </div>
+
+
+                <div class="max-w-[20rem] h-[30rem] shadow-3xl rounded-2xl  z-10 bg-slate-50 overflow-hidden">
+                    <img src="/Asset/image4.png" alt="doctor giving patient injection">
+                    <h3 class="py-4 text-[1.4rem] font-semibold text-[#1F1534] px-6">Natural care for healthy facial skin</h3>
+                    <p class="px-6">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
+                    <div class="inline-flex px-6 items-center gap-2 py-2 text-[#4089ED]">
+                        <a href="#">Read more</a>
+                        <img src="/Asset/right-arrow-active.svg" alt="right arrow" class="w-4">
+                    </div>
+                </div>
+            </div>
+            <button class="
+            my-16 
+            w-[12rem] 
+            h-[3rem] border-2 
+            border-[#458FF6] 
+            text-[#458FF6] 
+            rounded-full 
+            flex 
+            flex-row
+            justify-center
+            items-center
+            mx-auto
+            ">
+                Learn more
+            </button>
+        </div>
+        <!-- Article End-->
+
+        <footer class="mt-36">
+            <div class="flex flex-row max-sm:flex-col max-sm:items-start flex-wrap justify-center items-center gap-16 py-20 px-20 max-sm:px-4 bg-gradient-to-r from-[#67C3F3] from-0% to-[#5A98F2] text-white absolute left-0 w-full">
+                <div class="max-w-[23rem]">
+                    <img src="/Asset/logo.png" alt="website logo">
+                    <p class="mt-4 my-8">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+                    <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+                </div>
+                <div class="flex-1">
+                    <h1 class="font-semibold mb-8 capitalize text-lg">Company</h1>
+                    <ul class="no-underline">
+                        <li class="mb-3"><a href="">About</a></li>
+                        <li class="mb-3"><a href="">Testimonial</a></li>
+                        <li class="mb-3"><a href="">Find a Doctor</a></li>
+                        <li><a href="">Apps</a></li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h1 class="font-semibold mb-8 capitalize text-lg">Region</h1>
+                    <ul class="no-underline">
+                        <li class="mb-3"><a href="">Indonesia</a></li>
+                        <li class="mb-3"><a href="">Singapore</a></li>
+                        <li class="mb-3"><a href="">Hongkong</a></li>
+                        <li><a href="">Canada</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold mb-8 capitalize text-lg">Help</h1>
+                    <ul class="no-underline">
+                        <li class="mb-3"><a href="">Help center</a></li>
+                        <li class="mb-3"><a href="">Contact support</a></li>
+                        <li class="mb-3"><a href="">Instructions</a></li>
+                        <li><a href="">How it works</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </footer>
+
+        <script>
+            function onToggleMenu(e){
+                const navLinks = document.querySelector('.nav-links');
+                e.name = e.name === 'menu-outline' ? 'close': 'menu-outline';
+                navLinks.classList.toggle('max-md:left-[0]');
+            }
+        </script>
+</body>
+</html>
